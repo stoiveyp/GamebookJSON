@@ -51,10 +51,20 @@ The story is the primary container. As most of the time will be spent within the
 | startsection | The section through which the story starts. This is the first section to render when reading the story, but does not need to be the first section in the ```sections object. | yes |
 
 ### Sections
-Coming Soon
+The sections object contains the individual items that make up the storyline. Each item is a property of the object, so the property name is the section identifier.
+
+| property | description | required |
+| --- | --- | --- |
+| text | The text asociated with the story section | yes |
+| choices | The options to be presented to the reader at the bottom of the section | no |
 
 ####Choices
-Coming Soon
+The different paths available for your reader to navigate to after reading the current section. The text of the path should not include information about the navigation - that should be built using the moveto property; text is the information used to choose the path - not the path itself.
+
+| property | description | required |
+| --- | --- | --- |
+| text | The text asociated with this specific choice | yes |
+| moveto | The identifier of the section this choice will direct the user to | yes |
 
 ##Clients
 Coming Soon
