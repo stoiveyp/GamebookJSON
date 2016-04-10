@@ -6,12 +6,12 @@ I loved "choose your own adventure" books as a child. The fun of finding out if 
 
 ## Gamebook Format
 
-The primary concern of GamebookJSON is to keep the format simple, allowing a complete story to be easily created and shared. The json format is such that common extensions can be easily added (look at the [link Extensions](#extensions) section for any discussed and agreed on)  
+The primary concern of GamebookJSON is to keep the format simple, allowing a complete story to be easily created and shared. The json format is such that common extensions can be easily added (look at the [Extensions](#extensions) section for any discussed and agreed on)  
 
 The format is currently being defined, and so should be considered v0.1
 
 ###Example
-
+```javascript
   {
     "name": "GamebookJSON - The Story"
     "description": "This is the example story made to demonstrate the format of GamebookJSON"
@@ -35,11 +35,11 @@ The format is currently being defined, and so should be considered v0.1
         "text":"Alone, a single source of light, the darkness is too strong. The stories grow weak, the power of their words lessen until they can cannot sustain you. You take one last look before closing your eyes on their beauty forever."
       },
       "3":{
-        "text":"You muster the strength left in the words of the stories around you and announce the start of a change. The flare of interest lightens up your dark corner and others come to investigate, many joining the cause and announcing in turn. You smile, your choice has given the stories you love a chance to be enjoyed once more.
+        "text":"You muster the strength left in the words of the stories around you and announce the start of a change. The flare of interest lightens up your dark corner and others come to investigate, many joining the cause and announcing in turn. You smile, your choice has given the stories you love a chance to be enjoyed once more."
       }
     }
   }
-
+```
 ### Story Overview
 The story is the primary object
 
