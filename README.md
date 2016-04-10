@@ -17,7 +17,7 @@ The format is currently being defined, and so should be considered v0.1
     "description": "This is the example story made to demonstrate the format of GamebookJSON"
     "author": "A U Thor"
     "startSection":"1"
-    sections:{
+    "sections":{
       "1": {
         "text": "In your corner of the literary world, there is darkness and chaos. Gamebooks aren't being enjoyed as much as they should have been. You're there, viewing the scene, aware of the potential. What do you do?",
         "choices":[
@@ -41,7 +41,14 @@ The format is currently being defined, and so should be considered v0.1
   }
 ```
 ### Story Overview
-The story is the primary object
+The story is the primary container. As most of the time will be spent within the ``sections`` object the story should be kept light. 
+
+| property | description | required |
+| --- | --- | --- |
+| name | The story title | yes |
+| description | Brief summary of the story | no |
+| author | Name of the author | no |
+| startsection | The section through which the story starts. This is the first section to render when reading the story, but does not need to be the first section in the ```sections object. | yes |
 
 ### Sections
 Coming Soon
